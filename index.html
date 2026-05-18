@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apteka CRM Pro</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichki Tartib Nizomlari</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <div class="logo">AptekaCRM</div>
-  <ul>
-    <li><a href="#">Bosh sahifa</a></li>
-    <li><a href="#">Imkoniyatlar</a></li>
-    <li><a href="#">Narx</a></li>
-    <li><a href="#">Aloqa</a></li>
-  </ul>
-</nav>
+<header>
+    <h1>Oliy Ta'lim Ichki Tartib Nizomlari</h1>
 
-<header class="hero">
-  <div class="hero-text">
-    <h1>Aptekalar uchun Professional CRM</h1>
-    <p>Ombor, sotuv va hisobotlarni bitta tizimda boshqaring</p>
-    <button id="demoBtn">Demo Korish</button>
-  </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Bosh Sahifa</a></li>
+            <li><a href="#rules">Nizomlar</a></li>
+            <li><a href="#news">Yangiliklar</a></li>
+            <li><a href="#contact">Bog'lanish</a></li>
+        </ul>
+    </nav>
+
+    <button id="darkModeBtn">🌙 Dark Mode</button>
 </header>
 
-<section class="features">
-  <h2>Tizim Imkoniyatlari</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Ombor Nazorati</h3>
-      <p>Dorilar va mahsulotlarni boshqarish.</p>
-    </div>
-
-    <div class="card">
-      <h3>Sotuv Tizimi</h3>
-      <p>Chek chiqarish va savdo statistikasi.</p>
-    </div>
-
-    <div class="card">
-      <h3>Hisobotlar</h3>
-      <p>Kunlik va oylik hisobotlar.</p>
-    </div>
-
-    <div class="card">
-      <h3>Admin Panel</h3>
-      <p>Foydalanuvchilarni boshqarish.</p>
-    </div>
-
-    <div class="card">
-      <h3>Responsive Dizayn</h3>
-      <p>Telefon va kompyuterga mos.</p>
-    </div>
-
-    <div class="card">
-      <h3>Tezkor Ishlash</h3>
-      <p>Optimallashtirilgan zamonaviy UI.</p>
-    </div>
-
-  </div>
+<section id="home" class="hero">
+    <h2>Xush Kelibsiz</h2>
+    <p>Universitet ichki tartib-qoidalari bilan tanishing.</p>
 </section>
 
-<section class="price">
-  <h2>Narx Kelishiladi</h2>
-  <p>Professional web tizim</p>
+<section id="rules" class="cards">
+
+    <div class="card">
+        <h3>Talabalar Qoidalari</h3>
+        <p>Darslarga vaqtida kelish majburiy.</p>
+        <button onclick="showAlert()">Batafsil</button>
+    </div>
+
+    <div class="card">
+        <h3>O‘qituvchilar Nizomi</h3>
+        <p>Ta'lim sifatini oshirish asosiy vazifa.</p>
+        <button onclick="showAlert()">Batafsil</button>
+    </div>
+
+    <div class="card">
+        <h3>Universitet Tartibi</h3>
+        <p>Ichki tartib-intizomga amal qilish shart.</p>
+        <button onclick="showAlert()">Batafsil</button>
+    </div>
+
 </section>
 
-<script src="./main.js"></script>
+<section id="news" class="news">
+    <h2>Yangiliklar</h2>
+
+    <input type="text" id="searchInput" placeholder="Qidirish...">
+
+    <ul id="newsList">
+        <li>Yangi o‘quv semestri boshlandi</li>
+        <li>Ichki nizom yangilandi</li>
+        <li>Talabalar konferensiyasi bo‘lib o‘tadi</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Bog‘lanish</h2>
+
+    <form id="contactForm">
+        <input type="text" placeholder="Ismingiz" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Xabar"></textarea>
+        <button type="submit">Yuborish</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Universitet Web Sayti</p>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
